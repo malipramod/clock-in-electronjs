@@ -1,0 +1,13 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center{
+    text-align: center;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background: rgb(187, 177, 177);
+    border: 2px solid grey;
+    margin:0 auto;
+}
