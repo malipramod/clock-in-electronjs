@@ -1,13 +1,27 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-
+.mui-container{
+    background-color: #111111;
+    color: white
+}
+.actions{
+    margin:0 auto;
+    text-align: center;
+}
+.divider{
+    border: 1px solid grey;
+    margin: 15px 0px;
+}
 .center{
     text-align: center;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    background: rgb(187, 177, 177);
-    border: 2px solid grey;
-    margin:0 auto;
+    width: 350px;
+    height: 350px;
+    border: 5px dashed grey;
+    margin:2% auto;
+}
+
+.center-text{
+    margin: 20%
 }

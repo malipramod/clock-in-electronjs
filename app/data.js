@@ -1,4 +1,5 @@
 let numberToTextMap = {
+    "0":"Zero",
     "1":"One",
     "2":"Two",
     "3":"Three",
@@ -57,8 +58,7 @@ let numberToTextMap = {
     "56":"Fifty Six",
     "57":"Fifty Seven",
     "58":"Fifty Eight",
-    "59":"Fifty Nine",
-    "0":"Sixty"
+    "59":"Fifty Nine"
 }
 
 module.exports={

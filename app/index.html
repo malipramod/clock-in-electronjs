@@ -9,19 +9,41 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.muicss.com/mui-0.9.43/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.9.43/js/mui.min.js"></script>
 </head>
 
-<body>
-    <button onclick="changeTimeFormat()" class="foo-button mdc-button">Change Format</button>
-    <div class="center">
-        <h1 id="hr"></h1>
-        <h2 id="min"></h2>
-        <h3 id="sec"></h3>
-        <h3 id="format"></h3>
+<body >
+    <div class="mui-container">
+        <div class="actions">
+            <div class="mui-dropdown">
+                <button class="mui-btn" data-mui-toggle="dropdown">
+                    <span id="formatText">
+                        Format: 24 Hr
+                    </span>
+                    <span class="mui-caret"></span>
+                </button>
+                <ul class="mui-dropdown__menu mui-dropdown__menu--right">
+                    <li><a onclick="changeTimeFormat(false)" href="#">12 Hr</a></li>
+                    <li><a onclick="changeTimeFormat(true)" href="#">24 Hr</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mui--divider-top"></div>
+        <div class="center">
+            <div class="center-text">
+                <div class="mui--text-light-secondary mui--text-display2" id="hr"></div>
+                <div class="divider"></div>
+                <div class="mui--text-light-secondary mui--text-headline" id="min"></div>
+                <div class="divider"></div>
+                <div class="mui--text-light-secondary mui--text-body1" id="sec"></div>
+                <div class="divider"></div>
+                <div class="mui--text-light-secondary mui--text-subhead" id="format"></div>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>

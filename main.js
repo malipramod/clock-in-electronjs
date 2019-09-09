@@ -9,17 +9,18 @@ require('electron-reload')(__dirname, {
 let win;
 function createWindow() {
     win = new BrowserWindow({
-        width: 350,
-        height: 350,
+        width: 500,
+        height: 500,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        // transparent: true, frame: false
     });
 
     win.loadFile('./app/index.html');
 
     win.removeMenu();
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
 
     win.on('closed', () => {
         win = null
