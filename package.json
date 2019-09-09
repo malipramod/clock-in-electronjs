@@ -1,0 +1,26 @@
+{
+  "name": "clock-in-electronjs",
+  "version": "1.0.0",
+  "description": "Clock in Electron JS",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malipramod/clock-in-electronjs.git"
+  },
+  "author": "Pramod Mali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malipramod/clock-in-electronjs/issues"
+  },
+  "homepage": "https://github.com/malipramod/clock-in-electronjs#readme",
+  "dependencies": {
+    "electron": "^6.0.7"
+  },
+  "devDependencies": {
+    "electron-reload": "^1.5.0"
+  }
+}
