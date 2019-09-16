@@ -11,3 +11,7 @@ Text Clock created in ElectronJS.
 ### 12 Hour Format
 
 ![image](https://user-images.githubusercontent.com/13375870/64948766-6489f400-d895-11e9-8a4f-a7cf536c5257.png)
+
+## Animation
+
+![Screen](https://user-images.githubusercontent.com/13375870/64950837-f7c52880-d899-11e9-8592-8fb1970af66a.gif)
