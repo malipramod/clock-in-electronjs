@@ -3,24 +3,60 @@
   "version": "1.0.0",
   "description": "Clock in Electron JS",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+  "author": {
+    "name": "Pramod Mali",
+    "email": "pramodmaali@gmail.com"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/malipramod/clock-in-electronjs.git"
   },
-  "author": "Pramod Mali",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/malipramod/clock-in-electronjs/issues"
   },
   "homepage": "https://github.com/malipramod/clock-in-electronjs#readme",
-  "dependencies": {
-    "electron": "^6.0.7"
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "electron app --disable-http-cache --no-electron-connect",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "org.clock.electron",
+    
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
   },
   "devDependencies": {
-    "electron-reload": "^1.5.0"
-  }
+    "electron-builder": "^21.2.0",
+    "electron": "^6.0.7"
+  },
+  "dependencies": {
+  }  
 }
