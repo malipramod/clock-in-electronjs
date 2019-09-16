@@ -1,2 +1,6 @@
 /node_modules/
-/dist/
+/dist/win-unpacked/
+/dist/nsis-web/
+dist/clock-in-electronjs Setup 1.0.0.exe.blockmap
+dist/latest.yml
+dist/builder-effective-config.yaml
