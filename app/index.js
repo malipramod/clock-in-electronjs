@@ -7,7 +7,7 @@ setInterval(() => {
 
 function convertNumberToText(num, type) {
     if (type === 'hr' && !format24)
-        return numberToTextMap[(num % 12).toString()];
+        return numberToTextMap[(num % 12 === 0 ? 12 : (num % 12)).toString()];
     return numberToTextMap[num.toString()]
 }
 
